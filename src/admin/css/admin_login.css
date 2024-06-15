@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body{
+  background: url(../css/images/9.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+form{
+	width:500px;
+	margin:auto;
+	padding:20px;
+	background:#9b9a9a;
+	font-size:18px;
+	border:solid;
+	border-radius:30px;
+	
+}
+
+.input-field{
+	 height:30px;
+   text-align:center;
+   font-weight:bold;
+}
+
+.icon {
+    padding: 8px;
+    min-width: 50px;
+}
+
+.input-icons i {
+     position: absolute;
+        
+}
+
+.button {
+  background-color:#2381a0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  width:75%;
+}
+
+.button:disabled{
+	background-color:grey;
+}
+
+h1{
+	font-size:50px;
+}
+
+h2{
+	font-size:30px;
+}
+    
+
+h1{
+   font-family: Arial, sans-serif;
+}
+
+#checkbox {
+  width:25px;
+  height:25px;
+}

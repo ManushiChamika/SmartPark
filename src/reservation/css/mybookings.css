@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+   --main-color:#b9c8d3;
+   --sub-color:#3f66a5;
+   --white:#fff;
+   --darkgray :#bdb7b7;
+   --border:.1rem solid rgba(220, 198, 156, .3);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 10% 20%, rgb(89, 196, 233) 0%, rgb(193, 181, 232) 90%);
+}
+
+.myReservations {
+    width: 50%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(243, 243, 243, 0.2);
+}
+.myReservations .heading {
+    text-align: center;
+    color: var(--sub-color);
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.myReservations .box-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.myReservations .box-container .box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    flex: 0 0 calc(33% - 62px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.myReservations .box-container .box:hover {
+    transform: scale(1.02);
+}
+.myReservations .box-container .box p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+    color: #666;
+}
+.myReservations .box-container .box p span {
+    font-weight: bold;
+    color: #333;
+}
+.myReservations .box-container .btn {
+    font-size: 10px;
+    background-color: var(--sub-color);
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.myReservations .box-container .btn1 {
+    font-size: 10px;
+    background-color: rgb(139, 51, 51);
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+.myReservations .box-container .btn-container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    gap: 5px;
+}
+.myReservations .box-container .btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .myReservations{
+        text-align: center;
+        width: 90%;       
+    }
+    .myReservations .btn-container{
+        align-items: center;
+        padding-left: 200px;
+    }
+    .myReservations .box-container .box {
+        margin: 0;
+        flex: 0 0 90%;
+    }
+    .myReservations .box-container .btn1 {
+        margin: 0;
+        text-align: center;
+        margin-left: 100px;
+    }
+    .myReservations .box-container .btn {
+        text-align: center;
+        margin-left: 80px;
+    }
+}
+@media (max-width: 600px) {
+    .myReservations .box-container .box {
+        flex: 0 0 100%;
+        display: flex;
+    }   
+    .myReservations .box-container .no-bookings a.btn {
+        font-size: 20px;
+        display: flex;
+        background-color:var(--sub-color);
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+}
+
+.myReservations .box-container .no-bookings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    flex: 0 0 750px; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0);
+    transition: all 0.3s ease;
+    height: auto; 
+    background-color: rgba(243, 243, 243, 0);
+}
+
+.myReservations .box-container .no-bookings p {
+    padding-bottom: .5rem;
+    text-transform: capitalize;
+    color: rgb(120, 38, 38);
+    font-size: 1.2em;
+}
+
+.myReservations .box-container .no-bookings a.btn {
+    font-size: 20px;
+    display: flex;
+    background-color:var(--sub-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.myReservations .box-container .no-bookings a.btn:hover {
+    background-color: var(--main-color);
+}
+
+.myReservations .box-container .btn-container .btn1:hover {
+    background-color: #404448;
+}
+
+.myReservations .box-container .btn-container .btn:hover {
+    background-color: #404448;
+}
+
+.myReservations .box-container .btn-container .btn3:hover {
+    background-color: #404448;
+}
+
+.myReservations .box-container .btn3 {
+    position: flex;
+    font-size: 10px;
+    background-color: #008000; 
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-transform: uppercase; 
+    width: 100%;
+    margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+    myReservations .box-container .no-bookings a.btn {
+        font-size: 20px;
+        display: flex;
+        background-color:var(--sub-color);
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        width: 50%;
+    }
+    .myReservations .box-container .btn-container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 250px;
+        position: grid;
+        padding: 20px;
+    }
+    .myReservations .box-container .btn,
+    .myReservations .box-container .btn1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .myReservations .box-container .btn3 {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+}

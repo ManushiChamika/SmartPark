@@ -1,0 +1,200 @@
+/*IT23237636 Nujaba MIF*/
+@charset "utf-8";
+
+body{
+  background-image:url('../images/park.jpeg');
+  background-size:100%;
+
+}
+
+form{
+	width:500px;
+	margin:auto;
+	padding:20px;
+	background:#f2f2f2;
+	font-size:18px;
+	border:solid;
+	border-radius:30px;
+	
+}
+
+.input-field{
+	height:30px;
+   text-align:center;
+   font-weight:bold;
+}
+
+.icon {
+     padding: 8px;
+     min-width: 50px;
+}
+
+ .input-icons i {
+     position: absolute;
+        
+}
+.link{ 
+  text-decoration:none;
+  color:#8e44ad;
+ 
+}
+
+
+.button {
+  background-color:#008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  width:75%;
+}
+
+.button:disabled{
+	background-color:grey;
+}
+
+.button-signup {
+  background-color:black; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+select{
+	width:260px;
+}
+
+ dl {
+        padding: 20px;
+        background-color:#C0C0C0; 
+        border: 8px solid black;
+        border-radius: 10px; 
+        overflow: hidden; 
+        width:75%;
+		
+    }
+    
+  
+ dt {
+        font-weight: bold;
+		font-size:20px;
+     text-align: left;
+    }
+    
+dd {
+        margin-left: 0;
+		font-size:18px;
+    text-align:left;
+    }
+.logout{
+   height:80px;
+  background-color:#008CBA; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  float: right;
+  border-radius: 8px;
+  margin:12px;
+  
+}
+
+
+
+.container {
+        display: flex;
+        height: 100%;
+		border-color:solid black;
+    }
+
+.left {
+        width: 70%;
+        background-color: #f0f0f0;
+		border-radius:20px;
+		padding-bottom:250px;
+		padding-left:20px;
+		height:100%;
+		border:solid 8px;
+    }
+
+.right {
+        width: 30%;
+        background-color: #ccc;
+		border-radius:20px ;
+	    padding-bottom:250px;
+		padding-left:10px;
+		padding-right:10px;
+		height:100%;
+		border:solid 8px ;
+    }
+	
+label{
+    font-size:25px;
+}
+
+h1{
+	font-size:50px;
+}
+
+.user{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+.caption{
+   
+	font-size:40px;
+	margin-left:220px;
+	margin-top:-100px;
+  }
+
+h2{
+	font-size:30px;
+}
+    
+	
+#user{
+	float:right;
+}
+
+.user-info{
+	background-color:#ccc;
+	width:75%;
+}
+
+.change-password{
+	width:auto;
+	margin:auto;
+	padding:20px;
+	background:#f2f2f2;
+	font-size:18px;
+	border:solid;
+	border-radius:30px;
+}
+
+h1{
+   font-family: Arial, sans-serif;
+}

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+   --main-color:#b9c8d3;
+   --sub-color:#3f66a5;
+   --white:#fff;
+   --darkgray :#bdb7b7;
+   --border:.1rem solid rgba(220, 198, 156, .3);
+}
+
+*{
+   font-family: 'Montserrat', sans-serif;
+   margin: 0; padding: 10px;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+   font-size: 14px;
+   border-radius: 6px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at 10% 20%, rgb(89, 196, 233) 0%, rgb(193, 181, 232) 90%);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: contain;
+}
+
+.edit-booking .edit-reservation {
+    width: 800px;
+    height: auto;
+    border: var(--border);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(228, 227, 227);
+    background-color: rgba(228, 227, 227, 0.5);
+
+}
+
+.edit-booking .edit-reservation h1{
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.edit-booking .edit-reservation form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-weight: bold;
+}
+
+.edit-booking .edit-reservation form .input{
+    padding: 4rem 1rem IMPORTANT;
+    margin: 1rem 0;
+    border-bottom: var(--border);
+    background: var(--darkgray);
+    color: var(--sub-color);
+    font-size: 2rem;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+
+  .edit-booking .edit-reservation form .input::placeholder{
+  color: rgba(27, 24, 19, 0.6);
+  padding: 20px;
+}
+
+.edit-booking .edit-reservation form input[type="submit"]{
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  font-size: 1rem;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  display: block;
+  margin: auto; 
+  width: 100%; 
+  font-weight: bold;
+}
+
+.edit-booking .edit-reservation form input[type="submit"]:hover{
+  background-color: grey;
+  color: var(--white);
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  .edit-booking .edit-reservation {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .edit-booking .edit-reservation h1{
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
+
+  .edit-booking .edit-reservation form .input{
+    padding: 2rem .5rem;
+    font-size: 1.5rem;
+  }
+
+  .edit-booking .edit-reservation form input[type="submit"]{
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container .btn1 {
+  background-color: rgb(14, 99, 14);
+  color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all .3s ease-in-out;
+  margin: 10px;
+  cursor: pointer;
+  width: 50%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button-container .btn1:hover {
+  background-color: grey;
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+   --main-color:#b9c8d3;
+   --sub-color:#3f66a5;
+   --white:#fff;
+   --darkgray :#bdb7b7;
+   --border:.1rem solid rgba(220, 198, 156, .3);
+}
+
+*{
+   font-family: 'Montserrat', sans-serif;
+   margin: 1px; padding: 1.5px;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+   font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at 10% 20%, rgb(89, 196, 233) 0%, rgb(193, 181, 232) 90%);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: contain;
+
+}
+
+#reservation form{
+  width: 1000px;
+  border: var(--border);
+  padding: 2rem; 
+  border-radius: 10px;
+  background-color: rgb(228, 227, 227);
+}
+
+#reservation form h3{
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#reservation form .flex{
+  display: flex;
+  flex-wrap: wrap; /* Add this line */
+  gap: 1.2rem;
+}
+
+#reservation form .flex .box{
+  flex: 1 1 40rem;
+}
+
+
+#reservation form .flex .box p{
+  font-size: 1.5rem;
+  color: var(--sub-color);
+  font-weight: bold;
+}
+
+#reservation form .flex .box .input{
+  padding: 1rem 0;
+  margin: 0.7rem 0;
+  border-bottom: var(--border);
+  background: var(--darkgray);
+  color: var(--sub-color);
+  font-size: 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#reservation form .flex .box .input::placeholder{
+  color: rgba(27, 24, 19, 0.6);
+}
+
+#reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
+  filter: invert(1);
+  padding: 5px;
+}
+#reservation form .flex .box input[type="time"]::-webkit-time-edit-fields-wrapper{
+  filter: invert(1);
+  padding: 5px;
+}
+
+
+
+#reservation form .btn{
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  display: block; /* Add this line to make the button a block element */
+  margin: auto; /* Add this line to center the button */
+  width: 100%; /* Add this line to make the button's background cover the whole space */
+}
+
+#reservation form .btn:hover{
+  background-color: var(--darkgray);
+  color: var(--white);
+}
+
+#reservation form .btn:active{
+  transform: scale(.95);
+}
+
+#reservation form .btn:focus{
+  outline: none;
+}
+
+#reservation form .flex .box .input::placeholder{
+  color: rgba(27, 24, 19, 0.6);
+  padding-left: 10px; 
+}
+#reservation form .btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+

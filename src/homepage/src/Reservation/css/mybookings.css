@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+   --main-color:#b9c8d3;
+   --sub-color:#3f66a5;
+   --white:#fff;
+   --darkgray :#bdb7b7;
+   --border:.1rem solid rgba(220, 198, 156, .3);
+}
+
+body{
+    background: radial-gradient(circle at 10% 20%, rgb(89, 196, 233) 0%, rgb(193, 181, 232) 90%);
+}
+
+.myReservations {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading {
+    text-align: center;
+    color: var(--sub-color);
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    flex: 0 0 calc(33% - 62px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.box:hover {
+    transform: scale(1.02);
+}
+.box p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+    color: #666;
+}
+.box p span {
+    font-weight: bold;
+    color: #333;
+}
+.btn {
+    font-size: 10px;
+    background-color: var(--sub-color);
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn1 {
+    font-size: 10px;
+    background-color: rgb(139, 51, 51);
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+.btn-container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    gap: 5px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .myReservations{
+        text-align: center;
+    }
+    
+    .btn-container{
+        align-items: center;
+        padding-left: 200px;
+    }
+    .box {
+        flex: 0 0 100%;
+    }
+}
+@media (max-width: 600px) {
+    .box {
+        flex: 0 0 100%;
+    }
+}
+
+.no-bookings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    flex: 0 0 750px; /* Adjust this line */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: auto; /* Adjust this value as needed */
+}
+
+.no-bookings p {
+    padding-bottom: .5rem;
+    text-transform: capitalize;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.no-bookings a.btn {
+    font-size: 20px;
+    display: flex;
+    background-color:var(--sub-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.no-bookings a.btn:hover {
+    background-color: #0056b3;
+}
+
+

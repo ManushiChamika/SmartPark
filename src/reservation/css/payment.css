@@ -1,0 +1,91 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: radial-gradient(circle at 10% 20%, rgb(89, 196, 233) 0%, rgb(193, 181, 232) 90%);
+}
+
+#payment-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgb(255,255, 255, 0.5);
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2d4d70;
+  text-transform: uppercase;
+}
+
+#payment-formlabel {
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 20px;
+}
+
+#payment-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#payment-form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #3c6ca0;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#payment-form input[type="submit"]:hover {
+  background-color: #343b42;
+}
+
+#payment-form form .btn{
+  background-color: rgb(49, 82, 101);
+  color:white;
+  font-size: 1rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  display: block; 
+  margin: 20px; 
+  width: 100%; 
+} 
+#payment-form form .btn:hover{
+  background-color: #343b42;
+}
+@media (max-width: 600px) {
+  form {
+    padding: 10px;
+  }
+}
+#payment-form .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+  #payment-form .btn{
+      width: 100%;
+      margin-bottom: 10px;
+}
+}
+  

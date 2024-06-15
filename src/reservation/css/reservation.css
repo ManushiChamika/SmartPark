@@ -1,0 +1,365 @@
+
+.reservation-headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background: #53595C;
+  background: rgba(29, 133, 168, 0.9);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.reservation-headings .heading2 h3{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d2d6d7;
+  
+}
+.reservation-headings .heading_reservation h1{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #3c4041;
+  text-transform: uppercase;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .reservation-headings .heading h1,
+  .reservation-headings .heading2 h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reservation-headings .heading h1,
+  .reservation-headings .heading2 h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.floor-section {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: #f2f2f2 url('../images/24.jpg') no-repeat center center;
+  background-size: cover; 
+  padding: 10px;
+}
+
+
+.floor-section .parent-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  background: rgba(90, 96, 98, 0.91);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+.floor-section .parent-container .packages {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.floor-section .parent-container .box-container-floorsection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.floor-section .parent-container .packages .box-container-floorsection .box:hover .image img{
+  transform: scale(1.1);
+}
+
+.floor-section .parent-container .packages .box-container-floorsection .box .image{ 
+  height: 40rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  opacity:0.6;
+  padding: 0;
+  margin: 10px;
+} 
+
+.floor-section .parent-container .packages .box-container-floorsection .box .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0);
+}   
+
+.floor-section .parent-container p{
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 20x;
+  color: #d2d6d7;
+  text-transform: uppercase;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .floor-section .parent-container .packages {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .floor-section .parent-container .packages .box-container-floorsection .box .image{ 
+    border-radius: 20%;
+  } 
+}
+
+@media screen and (max-width: 480px) {
+  .floor-section .parent-container .packages {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .floor-section .parent-container .packages .box-container-floorsection .box .image{ 
+    border-radius: 50%;
+  } 
+}
+
+
+/* parking-slot section */
+.parking-slots {
+  background-color: rgb(224, 225, 225);
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  grid-template-columns: repeat(4, 3fr);
+  padding: 20px;
+  margin: 20px;
+  font-size: 25px;
+  padding-left: 50px;
+  border-radius: 20px;
+}
+
+.parking-slots .box-containers-parkingslots {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  padding: 20px;
+  width: 150%;
+  height: auto;
+  margin: 30px;
+
+}
+
+.parking-slots .box-containers-parkingslots .boxes:hover .images img {
+  transform: scale(1.1);
+}
+
+.parking-slots .box-containers-parkingslots .boxes .images {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.parking-slots .box-containers-parkingslots .boxes .images img {
+  max-width: 100%;
+  height: auto; 
+  object-fit: cover;
+  transition: 0.2s linear;
+  border-radius: 20px;
+  padding: 40px;
+  
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .parking-slots{
+    grid-template-columns: repeat(1, minmax(0, 1fr)); 
+  }
+  .parking-slots .box-containers-parkingslots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    margin: 1px;
+    text-align: center;
+  }
+  .parking-slots .box-containers-parkingslots .boxes .images{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .parking-slots{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .parking-slots .box-containers-parkingslots {
+    width: 1000px;
+  }
+}
+.symbols img{
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: rgb(28, 50, 161);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  float: left;
+}
+.static_parking_space{
+  border-radius: 20px;
+  background: #f2f2f2 url('../images/4.jpg') no-repeat center center;
+  background-size: cover; 
+  align-items: center;
+}
+.static_parking_space h2 {
+  font-family: 'Arial', sans-serif;
+  color: #f2f2f2;
+  font-size: 2.5em; 
+  text-align: center;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.static_parking_space .box-containers .boxes .imgs img {
+  width: 150px; 
+  height: auto;
+  object-fit: cover;
+  padding: 20px;
+  display: block;
+  float: left;
+  float: right;
+  background-color: rgb(223, 218, 218);
+
+}
+
+.static_parking_space .containers {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 0.3s ease-in-out;
+  height: auto;
+  width: 50%;
+  padding: 20px;
+  padding-left: 380px;
+  text-align: center;
+}
+
+.static_parking_space .static {
+  background-color:  rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 200px;;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.static_parking_space .static:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.static_parking_space .static_img {
+  overflow: hidden;
+  padding-top: 5%;
+  position: relative;
+  padding:20px;
+}
+
+.static_parking_space .static_img img {
+  width: 150px;
+  height: auto;
+  position: block;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.static_parking_space .static_img:hover img {
+  transform: scale(1.1);
+}
+
+.static_parking_space .definition {
+  font-size: 18px;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .static_parking_space .static {
+      width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .static_parking_space .containers{
+    padding-left: 180px;
+  }
+  .static_parking_space .box-containers .boxes .imgs img
+  {
+    width: 100px;
+    padding: 10px; 
+    font-size: 16px;
+  }
+  .static_parking_space .definition{
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .static_parking_space .box-containers .boxes .imgs img
+   {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .static_parking_space .definition{
+    padding: 25px; 
+    font-size: 14px;
+  }
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #293d3f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2f5f63;
+}
+
+@media screen and (max-width: 768px) {
+  button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+
